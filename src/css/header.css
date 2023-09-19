@@ -1,0 +1,58 @@
+/* Header Content */
+
+.header-content--firstspan {
+  font-size: 1.5rem;
+}
+
+.header-content--secondspan {
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.header-content--thirdspan {
+  display: inline-block;
+  font-size: 1.2rem;
+  padding-top: 10px;
+}
+
+.header-orange--bg {
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.header-green--bg {
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+
+/* Media Query Large Screens */
+
+@media only screen and (min-width: 992px) {
+  /* Header Content */
+
+  .header-content--firstspan {
+    font-size: 2.5rem;
+  }
+
+  .header-content--secondspan {
+    font-size: 3rem;
+  }
+
+  .header-content--thirdspan {
+    font-size: 1.5rem;
+  }
+
+  .header-orange--bg {
+    width: fit-content;
+    top: 0;
+    left: 0;
+  }
+
+  .header-green--bg {
+    width: fit-content;
+    top: 0;
+    right: 0;
+  }
+}

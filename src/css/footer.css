@@ -1,0 +1,28 @@
+.footer {
+  background-color: var(--secondaryOrange);
+  color: var(--lightColor);
+}
+
+.footer-content a {
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--lightColor);
+}
+.footer-content h2 {
+  font-size: 14px;
+}
+
+.trademark{
+    border-top:1px solid #FFC19D;
+}
+
+/* Media Query Large Screens */
+
+@media only screen and (min-width: 992px) {
+  .footer-content a {
+    font-size: 20px;
+  }
+  .footer-content h2 {
+    font-size: 20px;
+  }
+}

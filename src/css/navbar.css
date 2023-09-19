@@ -1,0 +1,40 @@
+nav {
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.sticky {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link:hover::after {
+  width: 60%;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  background-color: var(--primaryOrange);
+  height: 3px;
+  transition: width 0.2s;
+}
+
+.active::after {
+  width: 60%;
+}
+
+.navbar-toggler {
+  min-width: 40px !important;
+}

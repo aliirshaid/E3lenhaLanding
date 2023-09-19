@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Montserrat:wght@500&family=Tajawal:wght@300;400;700&display=swap");
+
+:root {
+  /* Colors */
+  --navColor: #1e1e1e;
+  --bodyColor: #000000;
+  --lightColor: #ffffff;
+  --primaryOrange: #f47820;
+  --primaryGreen: #28afb0;
+  --secondaryOrange: #d3671b;
+
+  /* Width */
+  --centralizedContainer: 85%;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+}
+
+li::marker {
+  font-size: 1.3em;
+}
+
+main{
+  overflow: hidden;
+}
+
+/* buttons */
+
+button {
+  min-width: 150px;
+  font-size: 1.3rem !important;
+  font-weight: 700;
+  padding: 0px 10px;
+}
+
+.orange-filled--btn {
+  background-color: var(--primaryOrange);
+}
+
+.orange-outlined--btn {
+  border: 1px solid var(--primaryOrange);
+  background-color: transparent;
+}
+
+.orange-outlined--btn:hover {
+  background-color: var(--primaryOrange);
+}
+
+.orange-filled--btn:hover {
+  background-color: transparent;
+  color: var(--primaryOrange);
+  border: 1px solid var(--primaryOrange);
+}
+
+.green-filled--btn {
+  color: var(--lightColor);
+  background-color: var(--primaryGreen);
+}
+
+.green-filled--btn:hover {
+  background-color: transparent;
+  color: var(--primaryGreen);
+  border: 1px solid var(--primaryGreen);
+}
+
+.green-outlined--btn {
+  border: 1px solid var(--primaryGreen);
+  color: var(--primaryGreen);
+  background-color: transparent;
+}
+
+.green-outlined--btn:hover {
+  background-color: var(--primaryGreen);
+}
+

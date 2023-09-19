@@ -1,0 +1,46 @@
+.provide {
+  height: 75vh;
+}
+
+.provide-header {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.provide-points {
+  font-size: 1.1rem;
+}
+
+.provide-points .provide-point span {
+  color: var(--primaryGreen);
+  font-weight: 700;
+}
+
+.porvide-green--bg {
+  display: none;
+}
+
+/* Media Query Large Screens */
+
+@media only screen and (min-width: 992px) {
+  /* Header Content */
+
+  .provide-header {
+    font-size: 2.5rem;
+  }
+
+  .provide-points {
+    font-size: 2rem;
+  }
+
+  /* circle backgrounds */
+
+  .provide-green--bg {
+    display: block;
+  }
+
+  .provide-green--bg {
+    bottom: -89rem;
+    left: -20rem;
+  }
+}
