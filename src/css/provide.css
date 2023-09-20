@@ -16,9 +16,6 @@
   font-weight: 700;
 }
 
-.porvide-green--bg {
-  display: none;
-}
 
 /* Media Query Large Screens */
 
@@ -33,14 +30,5 @@
     font-size: 2rem;
   }
 
-  /* circle backgrounds */
 
-  .provide-green--bg {
-    display: block;
-  }
-
-  .provide-green--bg {
-    bottom: -89rem;
-    left: -20rem;
-  }
 }

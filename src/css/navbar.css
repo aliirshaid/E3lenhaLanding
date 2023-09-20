@@ -1,6 +1,6 @@
 nav {
   position: relative;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease , border-radius 0.3s ease;
 }
 
 .sticky {
@@ -37,4 +37,20 @@ nav {
 
 .navbar-toggler {
   min-width: 40px !important;
+}
+
+.corner-radius{
+  border-radius: 0px 0px 40px 40px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
+}
+
+
+/* Media Query Large Screens */
+
+@media only screen and (min-width: 992px) {
+  .corner-radius{
+    border-radius: 0 ;
+  }
+
 }

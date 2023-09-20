@@ -4,16 +4,36 @@
 }
 
 .footer-content a {
+  position: relative;
+  display: inline-block;
   text-decoration: none;
   font-size: 14px;
   color: var(--lightColor);
+  
 }
+
+.footer-content a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right:0;
+  height: 1px;
+  width:0%;
+  background-color: var(--lightColor);
+  transition: all 0.3s ease;
+}
+
+.footer-content a:hover::after {
+  width:100%;
+}
+
+
 .footer-content h2 {
   font-size: 14px;
 }
 
-.trademark{
-    border-top:1px solid #FFC19D;
+.trademark {
+  border-top: 1px solid #ffc19d;
 }
 
 /* Media Query Large Screens */

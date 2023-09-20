@@ -8,29 +8,3 @@
   font-weight: 400;
   width: 90%;
 }
-
-.services-orange--bg,
-.services-green--bg {
-  display: none;
-}
-
-/* Media Query Large Screens */
-
-@media only screen and (min-width: 992px) {
-  /* circle backgrounds */
-
-  .services-orange--bg,
-  .services-green--bg {
-    display: block;
-  }
-
-  .services-orange--bg {
-    top: 124rem;
-    left: 74rem;
-    transform: translate(-50%, -50%) rotate(-24.73deg);
-  }
-  .services-green--bg{
-    top:-25rem;
-    right:0;
-  }
-}

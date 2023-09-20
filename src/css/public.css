@@ -21,11 +21,14 @@ li::marker {
   font-size: 1.3em;
 }
 
-main{
-  overflow: hidden;
+main {
+  overflow: hidden !important;
 }
 
-/* buttons */
+
+.btn{
+  border-color:transparent;
+}
 
 button {
   min-width: 150px;
@@ -73,4 +76,3 @@ button {
 .green-outlined--btn:hover {
   background-color: var(--primaryGreen);
 }
-

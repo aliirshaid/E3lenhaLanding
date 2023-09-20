@@ -15,18 +15,6 @@
   padding-top: 10px;
 }
 
-.header-orange--bg {
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
-.header-green--bg {
-  width: 100%;
-  top: 0;
-  right: 0;
-}
-
 /* Media Query Large Screens */
 
 @media only screen and (min-width: 992px) {
@@ -44,15 +32,4 @@
     font-size: 1.5rem;
   }
 
-  .header-orange--bg {
-    width: fit-content;
-    top: 0;
-    left: 0;
-  }
-
-  .header-green--bg {
-    width: fit-content;
-    top: 0;
-    right: 0;
-  }
 }

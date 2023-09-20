@@ -2,8 +2,18 @@ const navbar = document.querySelector("nav");
 const sticky = navbar.offsetTop;
 let topRectangles;
 const navBarAnchorsSections = document.querySelectorAll(
-  "#sellers, #marketers, #contactus"
+  "#header, #sellers, #marketers, #contactus"
 );
+
+const handleNavBackground = (event) => {
+  navbar.classList.add("bg-light");
+  navbar.classList.remove("bg-transparent");
+  if (navbar.classList.contains("corner-radius")) {
+    navbar.classList.remove("corner-radius");
+  } else {
+    navbar.classList.add("corner-radius");
+  }
+};
 
 const getTopRectanglesForNavbar = () => {
   topRectangles = Array.from(navBarAnchorsSections).map((section) => {
@@ -14,6 +24,9 @@ const getTopRectanglesForNavbar = () => {
 };
 
 const handleStickyNavbar = () => {
+  if (navbar.classList.contains("corner-radius")) {
+    return;
+  }
   navbar.classList.toggle("bg-light", window.scrollY > sticky);
   navbar.classList.toggle("bg-transparent", window.scrollY <= sticky);
 };
@@ -39,18 +52,11 @@ const handleActiveAnchorsNavbar = () => {
       anchor.classList.remove("active");
     }
   }
-  const headerAnchor = document.querySelector('a[href="#header"]');
+
   const contactUsAnchor = document.querySelector('a[href="#contactus"]');
+
   if (scrollY + windowHeight >= documentHeight) {
     contactUsAnchor.classList.toggle("active");
-    headerAnchor.classList.remove("active");
-    return;
-  }
-
-  if (activeAnchorFound) {
-    headerAnchor.classList.remove("active");
-  } else {
-    headerAnchor.classList.add("active");
   }
 };
 
